@@ -20,7 +20,7 @@ const SearchPokemon = () => {
     const NUMBER_POKEMONS = 9;
     const NUMBER_MAX_POKEMONS_API = 750;
     const { state } = useLocation<{deck: Deck}>();
-    console.log('state', state.deck)
+    
     const history = useHistory();
     const [pokemonSearch, setPokemonSearch] = useState('');
     const [pokemons, setPokemons] = useState<PokemonProps[]>([]);
